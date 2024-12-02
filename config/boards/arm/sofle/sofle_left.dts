@@ -82,8 +82,3 @@ backlight: pwmleds {
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
 };
-
-zephyr_udc0: &usbd {
-    compatible = "nordic,nrf-usbd";
-    status = "okay";
-}
