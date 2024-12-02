@@ -13,7 +13,7 @@
 
 &sofle_layout {
     transform = <&default_transform>;
-}
+};
 
 / {
     model = "sofle";
