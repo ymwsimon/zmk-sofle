@@ -1,6 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
+    chosen {
+		zmk,physical-layout = &sofle_layout;
+	};
     sofle_layout: sofle_layout {
         compatible = "zmk,physical-layout";
         display-name = "matrix layout";
