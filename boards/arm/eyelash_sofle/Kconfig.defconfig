@@ -34,9 +34,6 @@ config BOARD_ENABLE_DCDC_HV
 config ZMK_SPLIT
     default y
 
-config BT_CTLR
-    default USB
-
 if USB
 
 config USB_NRFX
