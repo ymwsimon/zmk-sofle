@@ -325,21 +325,21 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [44, 43]
+- p: [43, 42]
   k: $$mdi:apple-keyboard-control$$
 - p: [41, 40]
   k: $$mdi:apple-keyboard-command$$
-- p: [42, 43]
+- p: [43, 44]
   k: $$mdi:apple-keyboard-option$$
 - p: [41, 42]
   k: $$mdi:apple-keyboard-shift$$
 - p: [50, 49]
   k: RIGHT GUI
-- p: [48, 47]
+- p: [47, 46]
   k: $$mdi:apple-keyboard-option$$
 - p: [49, 48]
   k: $$mdi:apple-keyboard-shift$$
-- p: [47, 46]
+- p: [47, 48]
   k: $$mdi:apple-keyboard-control$$
 - p: [14, 15]
   k: $$mdi:keyboard-esc$$
@@ -359,10 +359,10 @@ combos:
 - p: [35, 36]
   k: {t: '''', s: '"'}
   l: [base]
-- p: [16, 17]
+- p: [16, 15]
   k: $$mdi:keyboard-tab$$
   l: [base]
-- p: [15, 16]
+- p: [16, 17]
   k: {t: '`', s: '~'}
   l: [base]
 - p: [17, 18]
