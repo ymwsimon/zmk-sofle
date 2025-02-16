@@ -184,7 +184,7 @@
 
         Combo-RAltShift {
             bindings = <&kp RS(RIGHT_ALT)>;
-            key-positions = <46 49>;
+            key-positions = <49 47>;
         };
     };
 
