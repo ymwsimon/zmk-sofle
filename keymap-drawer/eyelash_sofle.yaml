@@ -1,5 +1,5 @@
 layers:
-  L0:
+  base:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -55,16 +55,16 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - L3
-  - {t: '$$mdi:keyboard-space$$', h: L1}
-  - {t: '$$mdi:keyboard-space$$', h: L2}
+  - bt_med
+  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:keyboard-space$$', h: fun_symbol}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: L2}
-  - {t: '$$mdi:keyboard-space$$', h: L1}
-  - L3
+  - {t: '$$mdi:keyboard-space$$', h: fun_symbol}
+  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - bt_med
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
-  L1:
+  nav:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L2:
+  fun_symbol:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L3:
+  bt_med:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -229,8 +229,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
-  - NEXT
-  - MUTE
+  - $$mdi:skip-next$$
+  - $$mdi:volume-off$$
   - Ctl+Alt+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,7 +259,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L4:
+  symbol_num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -327,55 +327,54 @@ layers:
 combos:
 - p: [44, 43]
   k: $$mdi:apple-keyboard-control$$
-  l: [L0]
 - p: [43, 42]
   k: $$mdi:apple-keyboard-command$$
-  l: [L0]
 - p: [42, 41]
   k: $$mdi:apple-keyboard-option$$
-  l: [L0]
 - p: [41, 40]
   k: $$mdi:apple-keyboard-shift$$
-  l: [L0]
 - p: [47, 48]
   k: RIGHT GUI
-  l: [L0]
 - p: [48, 49]
   k: $$mdi:apple-keyboard-option$$
-  l: [L0]
 - p: [49, 50]
   k: $$mdi:apple-keyboard-shift$$
-  l: [L0]
 - p: [47, 46]
   k: $$mdi:apple-keyboard-control$$
-  l: [L0]
 - p: [57, 59]
-  k: {t: L4, h: '$$mdi:gesture-tap-hold$$'}
-  l: [L0]
+  k: {t: symbol_num, h: '$$mdi:gesture-tap-hold$$'}
 - p: [14, 15]
   k: $$mdi:keyboard-esc$$
-  l: [L0]
+  l: [base]
 - p: [23, 24]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [L0]
+  l: [base]
 - p: [36, 37]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [L0]
+  l: [base]
 - p: [33, 34]
   k: {t: '-', s: _}
-  l: [L0]
+  l: [base]
 - p: [34, 35]
   k: {t: '=', s: +}
-  l: [L0]
+  l: [base]
 - p: [35, 36]
   k: {t: '''', s: '"'}
-  l: [L0]
+  l: [base]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
-  l: [L0]
+  l: [base]
 - p: [15, 16]
   k: {t: '`', s: '~'}
-  l: [L0]
+  l: [base]
 - p: [17, 18]
   k: $$mdi:alpha-w-box$$
-  l: [L0]
+  l: [base]
+- p: [40, 43]
+  k: Ctl+$$mdi:apple-keyboard-shift$$
+- p: [43, 41]
+  k: Alt+$$mdi:apple-keyboard-control$$
+- p: [47, 50]
+  k: Sft+$$mdi:apple-keyboard-control$$
+- p: [47, 49]
+  k: AltGr+$$mdi:apple-keyboard-control$$
