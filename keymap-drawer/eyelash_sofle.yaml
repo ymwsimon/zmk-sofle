@@ -384,5 +384,5 @@ combos:
   k: '|'
 - p: [43, 41]
   k: Sft+$$mdi:apple-keyboard-option$$
-- p: [46, 49]
+- p: [49, 47]
   k: Sft+$$mdi:apple-keyboard-option$$
