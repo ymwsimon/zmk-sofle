@@ -51,55 +51,46 @@
         Combo-LCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <44 43>;
-            layers = <0>;
         };
 
         Combo-LGui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <43 42>;
-            layers = <0>;
         };
 
         Combo-LAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <42 41>;
-            layers = <0>;
         };
 
         Combo-LShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 40>;
-            layers = <0>;
         };
 
         Combo-RGui {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <47 48>;
-            layers = <0>;
         };
 
         Combo-RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <48 49>;
-            layers = <0>;
         };
 
         Combo-RShift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <49 50>;
-            layers = <0>;
         };
 
         Combo-RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <47 46>;
-            layers = <0>;
         };
 
         Combo-L4 {
             bindings = <&sl 4>;
             key-positions = <57 59>;
-            layers = <0>;
         };
 
         Combo-Esc {
@@ -155,6 +146,26 @@
             key-positions = <17 18>;
             layers = <0>;
         };
+
+        Combo-LCtrlShift {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <40 43>;
+        };
+
+        Combo-LCtrlAlt {
+            bindings = <&kp LA(LEFT_CONTROL)>;
+            key-positions = <43 41>;
+        };
+
+        Combo-RCtrlShift {
+            bindings = <&kp RS(RIGHT_CONTROL)>;
+            key-positions = <47 50>;
+        };
+
+        Combo-RCtrlAlt {
+            bindings = <&kp RA(RIGHT_CONTROL)>;
+            key-positions = <47 49>;
+        };
     };
 
     behaviors {
@@ -173,7 +184,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "L0";
+            display-name = "base";
         };
 
         layer_1 {
@@ -185,7 +196,7 @@
 &kp C_MUTE  &trans          &trans           &trans          &trans           &trans            &mkp LCLK        &trans         &trans     &trans      &trans         &trans
             >;
 
-            display-name = "L1";
+            display-name = "nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -199,19 +210,19 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "L2";
+            label = "fun_symbol";
         };
 
         layer_3 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans           &trans            &trans              &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PLAY_PAUSE  &kp K_STOP          &trans  &trans
-&trans  &out OUT_USB  &out OUT_BLE  &trans        &trans          &trans          &trans  &kp K_PREVIOUS     &kp K_NEXT       &kp K_MUTE        &kp LC(LA(DELETE))  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_STOP          &trans  &trans
+&trans  &out OUT_USB  &out OUT_BLE  &trans        &trans          &trans          &trans  &kp C_PREVIOUS     &kp C_NEXT       &kp C_MUTE        &kp LC(LA(DELETE))  &trans  &trans
 &trans  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans  &trans             &trans           &trans            &trans              &trans  &trans
 &trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans           &trans            &trans              &trans
             >;
 
-            label = "L3";
+            label = "bt_med";
         };
 
         layer_4 {
@@ -223,7 +234,7 @@
 &trans  &trans           &trans          &trans        &trans                &trans                   &trans  &trans        &trans          &trans           &trans            &trans
             >;
 
-            label = "L4";
+            label = "symbol_num";
         };
     };
 };
