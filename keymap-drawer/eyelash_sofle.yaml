@@ -55,13 +55,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - sy_nu
+  - sym_nb
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - {t: '$$mdi:keyboard-space$$', h: fun_sym}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: fun_sym}
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - sy_nu
+  - sym_nb
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
   nav:
@@ -79,7 +79,7 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
@@ -89,7 +89,7 @@ layers:
   - END
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -105,9 +105,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - SCROLLLOCK
+  - Ins
   - PAUSE BREAK
-  - $$mdi:mouse-scroll-wheel$$
+  - SCROLLLOCK
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -187,14 +187,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: sy_nu, type: held}
+  - {t: sym_nb, type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: sy_nu, type: held alternate}
+  - {t: sym_nb, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sy_nu:
+  sym_nb:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -327,17 +327,17 @@ layers:
 combos:
 - p: [44, 43]
   k: $$mdi:apple-keyboard-control$$
-- p: [43, 42]
-  k: $$mdi:apple-keyboard-command$$
-- p: [42, 41]
-  k: $$mdi:apple-keyboard-option$$
 - p: [41, 40]
-  k: $$mdi:apple-keyboard-shift$$
-- p: [47, 48]
-  k: RIGHT GUI
-- p: [48, 49]
+  k: $$mdi:apple-keyboard-command$$
+- p: [42, 43]
   k: $$mdi:apple-keyboard-option$$
-- p: [49, 50]
+- p: [41, 42]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [50, 49]
+  k: RIGHT GUI
+- p: [48, 47]
+  k: $$mdi:apple-keyboard-option$$
+- p: [49, 48]
   k: $$mdi:apple-keyboard-shift$$
 - p: [47, 46]
   k: $$mdi:apple-keyboard-control$$
@@ -368,13 +368,13 @@ combos:
 - p: [17, 18]
   k: $$mdi:alpha-w-box$$
   l: [base]
-- p: [40, 43]
+- p: [41, 44]
   k: Ctl+$$mdi:apple-keyboard-shift$$
-- p: [43, 41]
+- p: [42, 44]
   k: Alt+$$mdi:apple-keyboard-control$$
-- p: [47, 50]
+- p: [49, 46]
   k: Sft+$$mdi:apple-keyboard-control$$
-- p: [47, 49]
+- p: [46, 48]
   k: AltGr+$$mdi:apple-keyboard-control$$
 - p: [20, 21]
   k: '{'
@@ -382,3 +382,7 @@ combos:
   k: '}'
 - p: [22, 23]
   k: '|'
+- p: [43, 41]
+  k: Sft+$$mdi:apple-keyboard-option$$
+- p: [46, 49]
+  k: Sft+$$mdi:apple-keyboard-option$$
