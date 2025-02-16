@@ -378,10 +378,13 @@ combos:
   k: AltGr+$$mdi:apple-keyboard-control$$
 - p: [20, 21]
   k: '{'
+  l: [base]
 - p: [21, 22]
   k: '}'
+  l: [base]
 - p: [22, 23]
   k: '|'
+  l: [base]
 - p: [43, 41]
   k: Sft+$$mdi:apple-keyboard-option$$
 - p: [49, 47]
