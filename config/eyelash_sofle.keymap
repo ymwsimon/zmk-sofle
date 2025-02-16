@@ -54,89 +54,106 @@
             layers = <0>;
         };
 
-        Combo-LGUI {
+        Combo-LGui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <43 42>;
+            layers = <0>;
         };
 
         Combo-LAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <42 41>;
+            layers = <0>;
         };
 
         Combo-LShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 40>;
+            layers = <0>;
         };
 
-        Combo-RGUI {
+        Combo-RGui {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <47 48>;
+            layers = <0>;
         };
 
         Combo-RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <48 49>;
+            layers = <0>;
         };
 
         Combo-RShift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <49 50>;
+            layers = <0>;
         };
 
         Combo-RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <47 46>;
+            layers = <0>;
         };
 
         Combo-L4 {
             bindings = <&sl 4>;
             key-positions = <57 59>;
+            layers = <0>;
         };
 
         Combo-Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
+            layers = <0>;
         };
 
         Combo-Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <23 24>;
+            layers = <0>;
         };
 
         Combo-Enter {
             bindings = <&kp ENTER>;
             key-positions = <36 37>;
+            layers = <0>;
         };
 
         Combo-Minus {
             bindings = <&kp MINUS>;
             key-positions = <33 34>;
+            layers = <0>;
         };
 
         Combo-Equal {
             bindings = <&kp EQUAL>;
             key-positions = <34 35>;
+            layers = <0>;
         };
 
         Combo-SingleQ {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <35 36>;
+            layers = <0>;
         };
 
         Combo-Tab {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         Combo-Backtick {
             bindings = <&kp GRAVE>;
             key-positions = <15 16>;
+            layers = <0>;
         };
 
         Combo-CAPWORD {
             bindings = <&caps_word>;
             key-positions = <17 18>;
+            layers = <0>;
         };
     };
 
@@ -182,6 +199,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "L2";
         };
 
         layer_3 {
@@ -192,6 +210,8 @@
 &trans  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans  &trans             &trans           &trans            &trans              &trans  &trans
 &trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans           &trans            &trans              &trans
             >;
+
+            label = "L3";
         };
 
         layer_4 {
@@ -202,6 +222,8 @@
 &trans  &kp MINUS        &kp UNDERSCORE  &kp EQUAL     &kp PLUS              &kp RS(BACKSLASH)        &trans  &kp PIPE      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &trans           &trans          &trans        &trans                &trans                   &trans  &trans        &trans          &trans           &trans            &trans
             >;
+
+            label = "L4";
         };
     };
 };
