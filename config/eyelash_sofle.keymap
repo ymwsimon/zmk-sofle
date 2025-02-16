@@ -50,42 +50,58 @@
 
         Combo-LCtrl {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <44 43>;
+            key-positions = <43 42>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-LGui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <41 40>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-LAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <42 43>;
+            key-positions = <43 44>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-LShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 42>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RGui {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <50 49>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <48 47>;
+            key-positions = <47 46>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RShift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <49 48>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <47 46>;
+            key-positions = <47 48>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-Esc {
@@ -126,13 +142,13 @@
 
         Combo-Tab {
             bindings = <&kp TAB>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
             layers = <0>;
         };
 
         Combo-Backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
@@ -145,21 +161,29 @@
         Combo-LCtrlShift {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <41 44>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-LCtrlAlt {
             bindings = <&kp LA(LEFT_CONTROL)>;
             key-positions = <42 44>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RCtrlShift {
             bindings = <&kp RS(RIGHT_CONTROL)>;
             key-positions = <49 46>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RCtrlAlt {
             bindings = <&kp RA(RIGHT_CONTROL)>;
             key-positions = <46 48>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-LCur {
@@ -183,11 +207,15 @@
         Combo-LAltShift {
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <43 41>;
+            slow-release;
+            timeout-ms = <100>;
         };
 
         Combo-RAltShift {
             bindings = <&kp RS(RIGHT_ALT)>;
             key-positions = <49 47>;
+            slow-release;
+            timeout-ms = <100>;
         };
     };
 
