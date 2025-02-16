@@ -88,11 +88,6 @@
             key-positions = <47 46>;
         };
 
-        Combo-L4 {
-            bindings = <&sl 4>;
-            key-positions = <57 59>;
-        };
-
         Combo-Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
@@ -206,11 +201,11 @@
 &trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5               &mmv MOVE_DOWN   &kp EXCLAMATION  &kp AT_SIGN    &kp POUND       &kp DOLLAR            &kp PERCENT            &trans
 &trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10              &mmv MOVE_LEFT   &kp CARET        &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &mmv MOVE_RIGHT  &kp MINUS        &kp EQUAL      &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp SINGLE_QUOTE       &trans
-&trans  &trans   &trans   &trans            &trans             &trans               &mkp LCLK        &trans           &trans         &trans          &trans                &trans
+&trans  &trans   &trans   &trans            &trans             &mo 4                &mkp LCLK        &mo 4            &trans         &trans          &trans                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "fun_symbol";
+            label = "fun_sym";
         };
 
         layer_3 {
@@ -234,7 +229,7 @@
 &trans  &trans           &trans          &trans        &trans                &trans                   &trans  &trans        &trans          &trans           &trans            &trans
             >;
 
-            label = "symbol_num";
+            label = "sym_num";
         };
     };
 };
