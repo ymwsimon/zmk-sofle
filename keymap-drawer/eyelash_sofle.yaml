@@ -55,13 +55,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - '3'
+  - L3
   - {t: '$$mdi:keyboard-space$$', h: L1}
-  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: L2}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: L2}
   - {t: '$$mdi:keyboard-space$$', h: L1}
-  - '3'
+  - L3
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
   L1:
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  L2:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  L3:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,7 +259,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '4':
+  L4:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -330,35 +330,52 @@ combos:
   l: [L0]
 - p: [43, 42]
   k: $$mdi:apple-keyboard-command$$
+  l: [L0]
 - p: [42, 41]
   k: $$mdi:apple-keyboard-option$$
+  l: [L0]
 - p: [41, 40]
   k: $$mdi:apple-keyboard-shift$$
+  l: [L0]
 - p: [47, 48]
   k: RIGHT GUI
+  l: [L0]
 - p: [48, 49]
   k: $$mdi:apple-keyboard-option$$
+  l: [L0]
 - p: [49, 50]
   k: $$mdi:apple-keyboard-shift$$
+  l: [L0]
 - p: [47, 46]
   k: $$mdi:apple-keyboard-control$$
+  l: [L0]
 - p: [57, 59]
-  k: {t: '4', h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: L4, h: '$$mdi:gesture-tap-hold$$'}
+  l: [L0]
 - p: [14, 15]
   k: $$mdi:keyboard-esc$$
+  l: [L0]
 - p: [23, 24]
   k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [L0]
 - p: [36, 37]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [L0]
 - p: [33, 34]
   k: {t: '-', s: _}
+  l: [L0]
 - p: [34, 35]
   k: {t: '=', s: +}
+  l: [L0]
 - p: [35, 36]
   k: {t: '''', s: '"'}
+  l: [L0]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
+  l: [L0]
 - p: [15, 16]
   k: {t: '`', s: '~'}
+  l: [L0]
 - p: [17, 18]
   k: $$mdi:alpha-w-box$$
+  l: [L0]
