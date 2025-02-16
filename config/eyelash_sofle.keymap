@@ -160,7 +160,7 @@
 
         Combo-LCtrlShift {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <41 44>;
+            key-positions = <41 43>;
             slow-release;
             timeout-ms = <100>;
         };
@@ -174,7 +174,7 @@
 
         Combo-RCtrlShift {
             bindings = <&kp RS(RIGHT_CONTROL)>;
-            key-positions = <49 46>;
+            key-positions = <49 47>;
             slow-release;
             timeout-ms = <100>;
         };
@@ -206,14 +206,14 @@
 
         Combo-LAltShift {
             bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <43 41>;
+            key-positions = <41 44>;
             slow-release;
             timeout-ms = <100>;
         };
 
         Combo-RAltShift {
             bindings = <&kp RS(RIGHT_ALT)>;
-            key-positions = <49 47>;
+            key-positions = <49 46>;
             slow-release;
             timeout-ms = <100>;
         };
