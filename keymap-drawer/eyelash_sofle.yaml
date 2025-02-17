@@ -442,13 +442,13 @@ combos:
 - p: [46, 48]
   k: AltGr+$$mdi:apple-keyboard-control$$
 - p: [20, 21]
-  k: '{'
+  k: {t: '[', s: '{'}
   l: [base]
 - p: [21, 22]
-  k: '}'
+  k: {t: ']', s: '}'}
   l: [base]
 - p: [22, 23]
-  k: '|'
+  k: {t: \, s: '|'}
   l: [base]
 - p: [41, 44]
   k: Sft+$$mdi:apple-keyboard-option$$
