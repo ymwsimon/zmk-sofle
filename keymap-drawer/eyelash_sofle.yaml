@@ -55,13 +55,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - sym_nb
+  - nb_sym
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - {t: '$$mdi:keyboard-space$$', h: fun_sym}
+  - {t: '$$mdi:keyboard-space$$', h: fun_num}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: fun_sym}
+  - {t: '$$mdi:keyboard-space$$', h: fun_num}
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - sym_nb
+  - nb_sym
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
   nav:
@@ -121,15 +121,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: sym_nb, type: held}
+  - {t: nb_sym, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: sym_nb, type: held alternate}
+  - {t: nb_sym, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  fun_sym:
+  fun_num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -150,11 +150,11 @@ layers:
   - F4
   - F5
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F6
@@ -163,23 +163,23 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '"'
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - '{'
-  - '}'
+  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sym_nb:
+  nb_sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -208,12 +208,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
@@ -221,18 +215,24 @@ layers:
   - '4'
   - '5'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
@@ -306,10 +306,10 @@ layers:
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
+  - '"'
+  - {t: '`', s: '~'}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
