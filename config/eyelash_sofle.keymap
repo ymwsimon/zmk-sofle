@@ -242,9 +242,9 @@
             bindings = <
 &kp GRAVE   &kp F1      &kp F2           &kp F3          &kp F4           &kp F5            &mmv MOVE_UP     &kp F6         &kp F7     &kp F8      &kp F9         &kp F10          &trans
 &trans      &mkp MCLK   &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP      &mmv MOVE_DOWN   &kp HOME       &kp END    &kp UP      &kp BACKSPACE  &kp PRINTSCREEN  &trans
-&trans      &kp TILDE   &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PAGE_UP    &kp LEFT   &kp DOWN    &kp RIGHT      &kp SPACE        &trans
+&trans      &kp CAPS    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PAGE_UP    &kp LEFT   &kp DOWN    &kp RIGHT      &kp SPACE        &trans
 &trans      &kp INSERT  &kp PAUSE_BREAK  &kp SCROLLLOCK  &mkp MB4         &mkp MB5          &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp ENTER  &kp DELETE  &kp F11        &kp F12          &trans
-&kp C_MUTE  &trans      &trans           &trans          &mo 3            &trans            &mkp LCLK        &trans         &mo 3      &trans      &trans         &trans
+&kp C_MUTE  &trans      &trans           &trans          &mo 3            &mo 5             &mkp LCLK        &mo 5          &mo 3      &trans      &trans         &trans
             >;
 
             display-name = "nav";
@@ -253,11 +253,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans   &trans   &trans            &trans             &trans          &mmv MOVE_UP     &trans        &trans        &trans         &trans        &trans            &trans
-&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5          &mmv MOVE_DOWN   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5      &trans
-&trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10         &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0      &trans
-&trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPSLOCK    &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp BACKSLASH  &kp GRAVE     &kp SINGLE_QUOTE  &trans
-&trans  &trans   &trans   &trans            &trans             &mo 4           &mkp LCLK        &mo 4         &trans        &trans         &trans        &trans
+&trans  &trans   &trans   &trans            &trans             &trans               &mmv MOVE_UP     &trans        &trans        &trans         &trans        &trans            &trans
+&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5               &mmv MOVE_DOWN   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5      &trans
+&trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10              &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0      &trans
+&trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp BACKSLASH  &kp GRAVE     &kp SINGLE_QUOTE  &trans
+&trans  &trans   &trans   &trans            &mo 5              &mo 4                &mkp LCLK        &mo 4         &mo 5         &trans         &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -285,6 +285,18 @@
 &trans  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans  &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &kp GRAVE         &kp TILDE           &trans  &trans
 &trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans             &trans            &trans              &trans
             >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans           &trans         &trans    &trans     &trans           &trans  &trans          &trans          &trans          &trans           &trans     &trans
+&trans  &kp PRINTSCREEN  &kp BACKSPACE  &kp UP    &kp END    &kp HOME         &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MCLK  &trans
+&trans  &kp SPACE        &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_UP      &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp CAPS   &trans
+&trans  &trans           &trans         &kp DEL   &kp ENTER  &kp PAGE_DOWN    &trans  &mkp MB4        &mkp MB5        &trans          &trans           &trans     &trans
+&trans  &trans           &trans         &trans    &trans     &trans           &trans  &trans          &trans          &trans          &trans           &trans
+            >;
+
+            label = "left_nav";
         };
     };
 };
