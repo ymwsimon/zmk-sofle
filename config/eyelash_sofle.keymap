@@ -253,37 +253,37 @@
 
         layer_2 {
             bindings = <
-&trans  &trans   &trans   &trans            &trans             &trans               &mmv MOVE_UP     &trans           &trans         &trans          &trans                &trans                 &trans
-&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5               &mmv MOVE_DOWN   &kp EXCLAMATION  &kp AT_SIGN    &kp POUND       &kp DOLLAR            &kp PERCENT            &trans
-&trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10              &mmv MOVE_LEFT   &kp CARET        &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &mmv MOVE_RIGHT  &kp MINUS        &kp EQUAL      &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp SINGLE_QUOTE       &trans
-&trans  &trans   &trans   &trans            &trans             &mo 4                &mkp LCLK        &mo 4            &trans         &trans          &trans                &trans
+&trans  &trans   &trans   &trans            &trans             &trans          &mmv MOVE_UP     &trans        &trans        &trans         &trans        &trans            &trans
+&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5          &mmv MOVE_DOWN   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5      &trans
+&trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10         &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0      &trans
+&trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPSLOCK    &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp BACKSLASH  &kp GRAVE     &kp SINGLE_QUOTE  &trans
+&trans  &trans   &trans   &trans            &trans             &mo 4           &mkp LCLK        &mo 4         &trans        &trans         &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "fun_sym";
+            label = "fun_num";
         };
 
         layer_3 {
             bindings = <
-&trans  &trans           &trans          &trans        &trans                &trans                   &trans  &trans            &trans             &trans          &trans           &trans        &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND     &kp DOLLAR            &kp PERCENT              &trans  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5  &trans
-&trans  &kp CARET        &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &trans
-&trans  &kp MINUS        &kp UNDERSCORE  &kp EQUAL     &kp PLUS              &kp BACKSLASH            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE      &trans
-&trans  &trans           &trans          &mo 4         &trans                &trans                   &trans  &trans            &trans             &mo 4           &trans           &trans
+&trans  &trans        &trans          &trans        &trans        &trans           &trans  &trans            &trans             &trans          &trans                &trans                 &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &trans  &kp EXCLAMATION   &kp AT_SIGN        &kp POUND       &kp DOLLAR            &kp PERCENT            &trans
+&trans  &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &trans  &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp MINUS     &kp UNDERSCORE  &kp EQUAL     &kp PLUS      &kp BACKSLASH    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+&trans  &trans        &trans          &mo 4         &trans        &trans           &trans  &trans            &trans             &mo 4           &trans                &trans
             >;
 
-            label = "sym_nb";
+            label = "nb_sym";
         };
 
         layer_4 {
             label = "bt_med";
             bindings = <
-&trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans           &trans            &trans              &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_STOP          &trans  &trans
-&trans  &out OUT_USB  &out OUT_BLE  &trans        &trans          &trans          &trans  &kp C_PREVIOUS     &kp C_NEXT       &kp C_MUTE        &kp LC(LA(DELETE))  &trans  &trans
-&trans  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans  &trans             &trans           &trans            &trans              &trans  &trans
-&trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans           &trans            &trans              &trans
+&trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans             &trans            &trans              &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PLAY_PAUSE  &kp C_STOP          &trans  &trans
+&trans  &out OUT_USB  &out OUT_BLE  &trans        &trans          &trans          &trans  &kp C_PREVIOUS     &kp C_NEXT         &kp C_MUTE        &kp LC(LA(DELETE))  &trans  &trans
+&trans  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans  &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &kp GRAVE         &kp TILDE           &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans          &trans  &trans             &trans             &trans            &trans              &trans
             >;
         };
     };
