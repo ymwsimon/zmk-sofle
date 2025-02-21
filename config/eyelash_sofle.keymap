@@ -27,6 +27,7 @@
 
 &msc {
     time-to-max-speed-ms = <2400>;       // 300                   // 0
+    trigger-period-ms = <32>;
 };
 
 &mmv {
