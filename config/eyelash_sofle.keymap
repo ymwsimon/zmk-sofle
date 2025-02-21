@@ -26,7 +26,7 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    time-to-max-speed-ms = <600>;       // 300                   // 0
+    time-to-max-speed-ms = <1200>;       // 300                   // 0
 };
 
 &mmv {
